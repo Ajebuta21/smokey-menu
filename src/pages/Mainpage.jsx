@@ -1,5 +1,8 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import { AiOutlineInstagram} from "react-icons/ai";
+import { FiPhone } from "react-icons/fi";
+
 
 const Mainpage = () => {
   return (
@@ -12,10 +15,10 @@ const Mainpage = () => {
           <h5 className="text-white text-2xl">Menu:</h5>
           <ul className="list-disc marker:text-yellow-300 text-white text-xl">
             <li class="">
-              <Link to='/food-menu'>Food menu</Link>
+              <Link to="/food-menu">Food menu</Link>
             </li>
             <li>
-              <Link to='/drinks-menu'>Drink's menu</Link>
+              <Link to="/drinks-menu">Drink's menu</Link>
             </li>
           </ul>
         </div>
@@ -23,10 +26,12 @@ const Mainpage = () => {
       <div className="fixed bottom-0 w-full flex flex-col gap-1 z-20 text-white font-abel text-md px-2 pb-1">
         <h1>Contact us:</h1>
         <p className="gap-2 flex items-center">
-          <i className="fa-brands fa-instagram"></i>smokey__house
+          <AiOutlineInstagram />
+          smokey__house
         </p>
         <p className="gap-2 flex items-center">
-          <i className="fa-solid fa-phone"></i>08074812872 & 07067371485
+          <FiPhone />
+          08074812872 & 07067371485
         </p>
       </div>
     </div>
